@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Linear</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" type="image/png" href="img/favicon.png" sizes="16x16" />
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon" />
+    <meta
+      name="description"
+      content="Сайт SaaS-платформи для розробників"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div id="contact-modal" class="modal">
+      <div class="modal-content">
+        <span class="modal-close">&times;</span>
+        <h2>Зв'язатися з нами</h2>
+        <form id="contact-form">
+          <label for="name">Ім'я:</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Ваше ім'я"
+            required
+          />
+          <label for="email">Електронна пошта:</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="example@mail.com"
+            required
+          />
+          <label for="message">Повідомлення:</label>
+          <textarea
+            id="message"
+            name="message"
+            rows="5"
+            placeholder="Ваше повідомлення..."
+            required
+          ></textarea>
+          <button type="submit" class="btn">Надіслати</button>
+        </form>
+      </div>
+    </div>
+    <header class="header">
+      <div class="container">
+        <a href="#" class="logo"><img src="img/logo.png" alt="img" /></a>
+        <nav class="nav">
+          <ul class="nav-list">
+            <li><a href="#" style="color:#5e6ad2">Головна</a></li>
+            <li><a href="team.html">Команда</a></li>
+            <li><a href="price.html">Ціни</a></li>
+            <li><a href="contact.html">Контакти</a></li>
+          </ul>
+          <a href="#" class="btn" id="open-modal">Зв'язатися з нами</a>
+        </nav>
+        <div class="burger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </header>
+    <main class="main-section">
+      <div class="container-main" data-aos="fade-right">
+        <div class="bg-fon" data-aos="fade-right">
+          <img src="img/a.png" alt="Лінійні запитання" />
+        </div>
+        <h1 class="title" data-aos="fade-left">SaaS-платформа керування процесами розробки</h1>
+        <p class="description" data-aos="fade-right">
+          Наша SaaS-платформа допомагає командам розробників централізовано керувати проєктами, завданнями та технічними процесами. Автоматизуйте робочі етапи, покращуйте комунікацію в команді та прискорюйте доставку продукту – усе в єдиному інструменті.
+        </p>
+      </div>
+    </main>
+    <div class="video-section" data-aos="fade-right">
+      <div>
+        <a href="#" id="openVideo"><i class="fa-solid fa-play"></i>Подивіться, як це працює</a>
+      </div>
+    </div>
+    <section class="block-text-section">
+      <h2 data-aos="fade-left">Створюйте запити в Slack. <br />Керуйте ними в Linear.</h2>
+      <p data-aos="fade-right">
+        Linear Asks — це новий погляд на споживання. Надсилайте запити
+        безпосередньо зі Slack і автоматично надсилайте їх відповідній команді в
+        Linear. Усуньте захаращені канали та зменшіть перемикання контексту.
+      </p>
+    </section>
+    <section class="features-section">
+      <div class="container-feature">
+        <div class="intro">
+          <p class="brand-block" data-aos="fade-right"><i class="fa-brands fa-slack"></i>Slack</p>
+          <div>
+            <h2 class="section-title" data-aos="fade-left">
+              Працює там, де вже є ваша команда. У Slack.
+            </h2>
+            <p class="section-text" data-aos="fade-right">
+              Дозвольте робочому простору Slack перетворювати запити на Лінійні
+              запити — навіть якщо немає Лінійного облікового запису.
+            </p>
+          </div>
+        </div>
+        <div class="cards">
+          <div class="card-blue">
+            <div>
+              <h3 class="card-title" data-aos="fade-right">Шаблони</h3>
+              <p class="card-description" data-aos="fade-left">
+                Створення шаблонів для різних каналів Slack.
+              </p>
+            </div>
+            <img src="img/card.png" alt="img" data-aos="fade-right" />
+          </div>
+          <div class="card">
+            <img src="img/card2.png" alt="img" data-aos="fade-left" />
+            <div>
+              <h3 class="card-title" data-aos="fade-right">Приватні запити</h3>
+              <p class="card-description" data-aos="fade-left">
+                Створюйте приватні запити через DM для конфіденційних запитів.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="cards-bottom">
+          <div class="card" data-aos="fade-right">
+            <img src="img/card3.png" alt="img" data-aos="fade-left" />
+            <div>
+              <h3 class="card-title" data-aos="fade-left">Тригери автоматизації</h3>
+              <p class="card-description" data-aos="fade-left">
+                Перетворіть будь-яке повідомлення на Запитайте просто за
+                допомогою емодзі.
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <img src="img/card4.png" alt="img" data-aos="fade-left" />
+            <div>
+              <h3 class="card-title" data-aos="fade-left">Миттєві оновлення</h3>
+              <p class="card-description" data-aos="fade-left">
+                Отримуйте сповіщення про коментарі та оновлення статусу
+                безпосередньо в Slack.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="features-section">
+      <div class="container-feature">
+        <div class="intro" data-aos="fade-right">
+          <p class="brand-block" data-aos="fade-left">
+            <i class="fa-brands fa-squarespace"></i>Linear
+          </p>
+          <div>
+            <h2 class="section-title" data-aos="fade-right">
+              Відповідайте на запити швидше, ніж раніше.
+            </h2>
+            <p class="section-text" data-aos="fade-left">
+              Переглядайте, визначайте пріоритети, призначайте та оновлюйте
+              кожну проблему, не повертаючись до Slack.
+            </p>
+          </div>
+        </div>
+        <div class="cards-two">
+          <div class="card">
+            <img src="img/card5.png" alt="img" data-aos="fade-right" />
+            <div>
+              <h3 class="card-title" data-aos="fade-left">Синхронізація потоку в реальному часі</h3>
+              <p class="card-description" data-aos="fade-left">Відповідайте на запити з Linear.</p>
+            </div>
+          </div>
+          <div class="card-blue">
+            <div>
+              <h3 class="card-title" data-aos="fade-right">Сортування</h3>
+              <p class="card-description" data-aos="fade-left">
+                Керуйте вхідними запитами зі спільної папки "Вхідні" команди.
+              </p>
+            </div>
+            <img src="img/card6.png" alt="img" data-aos="fade-left" />
+          </div>
+        </div>
+        <div class="cards-bottom pos-abs">
+          <div class="card">
+            <img src="img/card7.png" alt="img" data-aos="fade-right"/>
+            <div>
+              <h3 class="card-title" data-aos="fade-left">Створений для швидкості</h3>
+              <p class="card-description" data-aos="fade-left">
+                Перегляньте свої запити за допомогою команди швидкої клавіатури.
+              </p>
+            </div>
+          </div>
+          <div class="card" data-aos="fade-right">
+            <img src="img/card8.png" alt="img" data-aos="fade-left"/>
+            <div>
+              <h3 class="card-title" data-aos="fade-left">Приватні команди</h3>
+              <p class="card-description" data-aos="fade-left">
+                Контролюйте, доступ до конфіденційних запитів.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="review-section">
+      <div class="review">
+        <img src="img/bg2.png" alt="img" data-aos="fade-right" />
+        <p data-aos="fade-left">
+          «Завдяки Linear Asks ми можемо централізувати всі процеси внутрішніх
+          запитів, включаючи юридичну, ІТ-службу та підтримку клієнтів».
+        </p>
+      </div>
+    </div>
+    <section class="features-section">
+      <div class="container-feature sla-container">
+        <div class="intro">
+          <p class="brand-block" data-aos="fade-left">
+            <i class="fa-solid fa-circle-plus"></i>Workflows
+          </p>
+          <div>
+            <h2 class="section-title" data-aos="fade-right">Створіть потужні робочі процеси.</h2>
+            <p class="section-text" data-aos="fade-left">
+              Розширені функції, такі як SLA, сортування та лінійна статистика
+              нові рівні контролю над робочими процесами ваших запитів.
+            </p>
+          </div>
+        </div>
+        <div class="cards">
+          <div class="card-sla" data-aos="fade-right">
+            <div>
+              <h3 class="card-title" data-aos="fade-right">Інсайти<span>Оновлено</span></h3>
+              <p class="card-description" data-aos="fade-left">
+                Переглядайте тенденції<br />
+                часу відповіді, робочого <br />навантаження та інших<br />
+                звітів.
+              </p>
+            </div>
+            <img src="img/card9.png" alt="img" data-aos="fade-left" />
+          </div>
+          <div class="card-sla card">
+            <img src="img/card10.png" alt="img" data-aos="fade-right"/>
+            <div>
+              <h3 class="card-title" data-aos="fade-left">
+                Сортування відповідальності<span>Нові</span>
+              </h3>
+              <p class="card-description" data-aos="fade-left">
+                Автоматично призначайте або сповіщайте членів команди.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="card-sla-bottom">
+          <img src="img/carusel.png" alt="img" data-aos="fade-left"/>
+          <div>
+            <h3 class="card-title" data-aos="fade-right">Автоматичні терміни</h3>
+            <p class="card-description" data-aos="fade-left">
+              Застосуйте SLA до чутливих до часу <br />
+              Просить повідомити терміновість.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="block-text-section">
+      <h2 data-aos="fade-right">Як команда працює</h2>
+      <p data-aos="fade-left">
+        Linear Asks підтримує всі типи запитів на робочому місці. Від інженерії
+        та дизайну до ІТ, юриспруденції та HR.
+      </p>
+    </section>
+    <section class="section-cards">
+      <div class="container-cards" id="cards-container"></div>
+    </section>
+    <section
+      class="main-section subs-section"
+      style="background: url('img/bg3.png') center no-repeat"
+    >
+      <div class="container-main">
+        <div class="bg-fon">
+          <img src="img/a.png" alt="Лінійні запитання" data-aos="fade-left" />
+        </div>
+        <div class="block-text-section">
+          <h2 data-aos="fade-right">Активуйте Linear Asks <br />для своєї команди</h2>
+          <p>
+            Linear Asks для робочих просторів плану Plus. <br />Отримайте 30
+            днів безкоштовно Asks.
+          </p>
+        </div>
+        <div class="btn-subs">
+          <a href="price.html" class="btn" data-aos="fade-right">Отримати 30 днів</a>
+          <a href="price.html" class="btn" data-aos="fade-right">Замовити демо</a>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-logo">
+          <p>
+            <img src="img/favicon.png" alt="img" data-aos="fade-left" />Linear - Designed Worldwide
+          </p>
+          <div class="footer-socials">
+            <a href="#"
+              ><i class="fa-brands fa-twitter" style="color: #8a8f98"></i
+            ></a>
+            <a href="#"
+              ><i class="fa-brands fa-github" style="color: #8a8f98"></i
+            ></a>
+            <a href="#"
+              ><i class="fa-brands fa-slack" style="color: #8a8f98"></i
+            ></a>
+          </div>
+        </div>
+        <div class="footer-links">
+          <div class="footer-column" data-aos="fade-right">
+            <h4>Продукт</h4>
+            <ul>
+              <li><a href="#">Особливості</a></li>
+              <li><a href="#">Інтеграції</a></li>
+              <li><a href="#">Ціноутворення</a></li>
+              <li><a href="#">Журнал змін</a></li>
+              <li><a href="#">Документи</a></li>
+              <li><a href="#">Лінійний метод</a></li>
+              <li><a href="#">Скачати</a></li>
+            </ul>
+          </div>
+          <div class="footer-column" data-aos="fade-left">
+            <h4>Компанія</h4>
+            <ul>
+              <li><a href="#">Про нас</a></li>
+              <li><a href="#">Блог</a></li>
+              <li><a href="#">Кар’єра</a></li>
+              <li><a href="#">Клієнти</a></li>
+              <li><a href="#">Бренд</a></li>
+            </ul>
+          </div>
+          <div class="footer-column" data-aos="fade-right">
+            <h4>Ресурси</h4>
+            <ul>
+              <li><a href="#">Спільнота</a></li>
+              <li><a href="#">Контакт</a></li>
+              <li><a href="#">DPA</a></li>
+              <li><a href="#">Політика</a></li>
+              <li><a href="#">Умови</a></li>
+              <li><a href="#">Повідомити</a></li>
+            </ul>
+          </div>
+          <div class="footer-column" data-aos="fade-left">
+            <h4>Розробники</h4>
+            <ul>
+              <li><a href="#">API</a></li>
+              <li><a href="#">Статус</a></li>
+              <li><a href="#">GitHub</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <div id="videoModal" class="modal">
+      <div class="modal-content video-modal">
+        <span class="modal-close" id="closeVideo">&times;</span>
+
+        <div class="video-container">
+          <iframe
+            id="videoFrame"
+            src=""
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 1400,
+      });
+    </script>
+
+    <script src="script/script.js"></script>
+  </body>
+</html>

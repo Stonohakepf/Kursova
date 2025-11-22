@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Linear</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" type="image/png" href="img/favicon.png" sizes="16x16" />
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon" />
+    <meta
+      name="description"
+      content="Сайт SaaS-платформи для розробників"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  </head>
+  <body>
+    <div id="contact-modal" class="modal">
+      <div class="modal-content">
+        <span class="modal-close">&times;</span>
+        <h2>Зв'язатися з нами</h2>
+        <form id="contact-form">
+          <label for="name">Ім'я:</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Ваше ім'я"
+            required
+          />
+          <label for="email">Електронна пошта:</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="example@mail.com"
+            required
+          />
+          <label for="message">Повідомлення:</label>
+          <textarea
+            id="message"
+            name="message"
+            rows="5"
+            placeholder="Ваше повідомлення..."
+            required
+          ></textarea>
+          <button type="submit" class="btn">Надіслати</button>
+        </form>
+      </div>
+    </div>
+    <header class="header">
+      <div class="container">
+        <a href="index.html" class="logo"
+          ><img src="img/logo.png" alt="img"
+        /></a>
+        <nav class="nav">
+          <ul class="nav-list">
+            <li><a href="index.html">Головна</a></li>
+            <li><a href="#" style="color:#5e6ad2">Команда</a></li>
+            <li><a href="price.html">Ціни</a></li>
+            <li><a href="contact.html">Контакти</a></li>
+          </ul>
+          <a href="#" class="btn" id="open-modal">Зв'язатися з нами</a>
+        </nav>
+        <div class="burger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </header>
+    <section class="block-text-section">
+      <h2 data-aos="fade-left">Як команда працює</h2>
+      <p data-aos="fade-right">
+        Linear Asks підтримує всі типи запитів на робочому місці. Від інженерії
+        та дизайну до ІТ, юриспруденції та HR.
+      </p>
+    </section>
+    <section class="section-cards">
+      <div class="container-cards" id="cards-container"></div>
+    </section>
+    <section class="team-section">
+      <h2>Наша команда</h2>
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="card-team">
+              <img src="img/team1.jpg" alt="img" />
+              <div>
+                <h3>Коренюк Анастасія</h3>
+                <p>Front-End Developer</p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card-team">
+              <img src="img/team2.jpg" alt="img" />
+              <div>
+                <h3>Іван Петров</h3>
+                <p>Back-End Developer</p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card-team">
+              <img src="img/team3.jpg" alt="img" />
+              <div>
+                <h3>Олег Ковальчук</h3>
+                <p>UI/UX Designer</p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card-team">
+              <img src="img/team4.jpg" alt="img" />
+              <div>
+                <h3>Максим Ткачук</h3>
+                <p>Project Manager</p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card-team">
+              <img src="img/team5.jpg" alt="img" />
+              <div>
+                <h3>Арсен Гнатюк</h3>
+                <p>Засновник компанії</p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card-team">
+              <img src="img/team6.jpg" alt="img" />
+              <div>
+                <h3>Людмилка Фередей</h3>
+                <p>Бугалтер</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+    </section>
+    <section
+      class="main-section subs-section"
+      style="background: url('img/bg3.png') center no-repeat"
+    >
+      <div class="container-main">
+        <div class="bg-fon">
+          <img src="img/a.png" alt="Лінійні запитання" />
+        </div>
+        <div class="block-text-section">
+          <h2>Активуйте Linear Asks <br />для своєї команди</h2>
+          <p>
+            Linear Asks для робочих просторів плану Plus. <br />Отримайте 30
+            днів безкоштовно Asks.
+          </p>
+        </div>
+        <div class="btn-subs">
+          <a href="price.html" class="btn">Отримати 30 днів</a>
+          <a href="price.html" class="btn">Замовити демо</a>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-logo">
+          <p>
+            <img src="img/favicon.png" alt="img" />Linear - Designed Worldwide
+          </p>
+          <div class="footer-socials">
+            <a href="#"
+              ><i class="fa-brands fa-twitter" style="color: #8a8f98"></i
+            ></a>
+            <a href="#"
+              ><i class="fa-brands fa-github" style="color: #8a8f98"></i
+            ></a>
+            <a href="#"
+              ><i class="fa-brands fa-slack" style="color: #8a8f98"></i
+            ></a>
+          </div>
+        </div>
+        <div class="footer-links">
+          <div class="footer-column">
+            <h4>Продукт</h4>
+            <ul>
+              <li><a href="#">Особливості</a></li>
+              <li><a href="#">Інтеграції</a></li>
+              <li><a href="#">Ціноутворення</a></li>
+              <li><a href="#">Журнал змін</a></li>
+              <li><a href="#">Документи</a></li>
+              <li><a href="#">Лінійний метод</a></li>
+              <li><a href="#">Скачати</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h4>Компанія</h4>
+            <ul>
+              <li><a href="#">Про нас</a></li>
+              <li><a href="#">Блог</a></li>
+              <li><a href="#">Кар’єра</a></li>
+              <li><a href="#">Клієнти</a></li>
+              <li><a href="#">Бренд</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h4>Ресурси</h4>
+            <ul>
+              <li><a href="#">Спільнота</a></li>
+              <li><a href="#">Контакт</a></li>
+              <li><a href="#">DPA</a></li>
+              <li><a href="#">Політика</a></li>
+              <li><a href="#">Умови</a></li>
+              <li><a href="#">Повідомити</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h4>Розробники</h4>
+            <ul>
+              <li><a href="#">API</a></li>
+              <li><a href="#">Статус</a></li>
+              <li><a href="#">GitHub</a></li>
+              <li><a href="#">Магія</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script/script.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 1400,
+      });
+    </script>
+  </body>
+</html>
